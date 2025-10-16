@@ -4,10 +4,12 @@ from app.split_integer import split_integer
 def test_sum_of_the_parts_should_be_equal_to_value() -> None:
     assert sum(split_integer(30, 5)) == 30
 
-def test_length_of_result_equals_number_of_parts():
+
+def test_length_of_result_equals_number_of_parts() -> None:
     assert len(split_integer(4, 2)) == 2
 
-def test_all_elements_should_be_integers():
+
+def test_all_elements_should_be_integers() -> None:
     result = split_integer(8, 4)
     assert max(result) - min(result) <= 1
 
